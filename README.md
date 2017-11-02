@@ -1,1 +1,3 @@
-# lcbo_products_opencare
+HOW TO VIEW THIS SITE
+
+DOWNLOAD AND THEN OPEN INDEX.HTML
