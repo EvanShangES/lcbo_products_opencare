@@ -1,0 +1,441 @@
+body{
+     margin: 0;
+     background: #F5F8FB;
+ }
+
+.rectangle{
+    background: #FFFFFF;
+    border: 1px solid #DDE4EF;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.05);
+}
+
+.navbar-custom{
+    overflow: hidden;
+    height: 80px;
+    width: 1280px;
+    margin: auto;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.filter{
+    padding-left: 130px;
+    padding-top:30px;
+    position: absolute;
+}
+
+.product-container {
+    width: 770px;
+    height: 1455px;
+    margin: 20px auto 5px auto;
+    text-align: justify;
+}
+
+.product-container:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+.product{
+    cursor: pointer;
+}
+
+.one-product{
+    width: 770px;
+    height: 300px;
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+
+.one-product > img{
+    position: absolute;
+    width: 195px;
+    height: 260px;
+    margin: 20px auto 20px 20px;
+}
+
+.one-product > div{
+    width: 500px;
+    height: 128px;
+    margin: 94px 55px 78px 215px;
+}
+
+.one-product > div > h1{
+    width: 500px;
+    height: 42px;
+    text-align: left;
+    font-family: Lora-Bold;
+    font-size: 30px;
+    color: #423C44;
+    margin: 0;
+    vertical-align: text-top;
+}
+
+.one-product > div > hr{
+    width: 500px;
+    height: 1px;
+    background: #F3F1F3;
+    margin: 25px 0 15px 0;
+    border: none;
+
+}
+
+.two-product{
+    width: 375px;
+    height: 385px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-bottom: 20px;
+}
+
+.two-product > img{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    margin: 25px 112px 160px 113px;
+}
+
+.two-product > div{
+    width: 315px;
+    height: 133px;
+    margin: 229px 30px 23px 30px;
+}
+
+.two-product > div > h1{
+    text-align: center;
+    width: 315px;
+    height: 70px;
+    font-family: Lora-Bold;
+    font-size: 24px;
+    color: #423C44;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.two-product > div > hr{
+    width: 315px;
+    height: 1px;
+    background: #F3F1F3;
+    margin: 7px 0px 10px 0px;
+    border: none;
+}
+
+.three-product{
+    width: 244px;
+    height: 355px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-bottom: 20px;
+}
+
+.three-product > img{
+    position: absolute;
+    width: 112.5px;
+    height: 150px;
+    margin: 25px 65.5px 180px 65px;
+}
+
+.three-product > div{
+    width: 200px;
+    height: 152px;
+    margin: 170px 22px 23px 22px;
+}
+
+/*.three-product .drink-name{*/
+/*width: 200px;*/
+/*height: 70px;*/
+/*font-family: Lora-Bold;*/
+/*font-size: 20px;*/
+/*color: #423C44;*/
+/*margin: 0;*/
+/*vertical-align: middle;*/
+/*}*/
+.three-product > div > h1{
+     text-align: center;
+     width: 200px;
+     height: 80px;
+     font-family: Lora-Bold;
+     font-size: 20px;
+     color: #423C44;
+     margin: 0 0 -15px 0;
+     vertical-align: middle;
+}
+
+.three-product > div > hr{
+    width: 200px;
+    height: 1px;
+    background: #F3F1F3;
+    margin: 7px 0px 10px 0px;
+    border: none;
+}
+
+.three-product .basic-info{
+    display: inline-block;
+}
+
+.three-product .drink-info {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+}
+
+.three-product .store-info{
+    width: inherit;
+    text-align: center;
+    display: flex;
+    margin-top: 13px;
+}
+
+.three-product .store-info .price{
+    width: inherit;
+    text-align: right; position: absolute; display: inline-block
+    /*text-align: right;*/
+}
+
+.three-product .store-info .inventory{
+    width: inherit;
+    text-align: left; position: absolute; display: inline-block
+    /*text-align: left;*/
+}
+
+.basic-info {
+    width: inherit;
+    display: flex;
+}
+
+.drink-info{
+    width: 50%;
+    text-align: left;
+    margin-top: 2px;
+}
+
+.store-info{
+    width: 50%;
+    text-align: right;
+    margin-top: 0;
+}
+
+.varietal{
+    /* Pinot Noir/Chardonna: */
+    display: block;
+    height: 20px;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    color: #6F6A71;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.package-alcohol{
+    /* 750 mL bottle • 12.5: */
+    display: block;
+    height: 14px;
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    color: #9E9A9F;
+    margin-top: 2px;
+    margin-bottom: 0;
+
+}
+
+.dollar-sign{
+    font-family: Roboto-Regular;
+    font-size: 11px;
+    color: #6F6A71;
+    /*vertical-align: text-top;*/
+}
+
+.price{
+    display: block;
+    text-align: right;
+    height: 20px;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    color: #423C44;
+    margin: 0;
+}
+
+.inventory{
+    display: block;
+    height: 20px;
+    font-family: Roboto-Bold;
+    font-size: 11px;
+    color: #6F6A71;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: 1;
+}
+
+.header{
+    display: none;
+}
+
+.modal-rectangle{
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #DDE4EF;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.05);
+    width: 630px;
+    height: 725px;
+    margin: 75px auto auto auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-rectangle > img{
+    width: 150px;
+    height: 200px;
+    margin: 58px auto auto auto;
+}
+
+.modal-rectangle > h1{
+    margin-bottom: 0;
+    /* Veuve Clicquot Ponsa: */
+    font-family: Lora-Bold;
+    font-size: 30px;
+    color: #423C44;
+}
+
+.modal-rectangle > hr{
+    width: 316px;
+    height: 1px;
+    background: #F3F1F3;
+    border: none;
+}
+
+.modal-rectangle .basic-info{
+    display: inline-flex;
+    width: 316px;
+    height: 42px;
+}
+
+.attributes{
+    display:  inline-flex;
+    width: 316px;
+    text-align: left;
+}
+
+.attr-list{
+    font-family: Roboto-Medium;
+    font-size: 12px;
+    color: #6F6A71;
+    line-height: 20px;
+}
+
+ul > li {
+    border-bottom: 2px dotted #ccc;
+
+    /*line-height: 1px;*/
+    text-align: right;
+    clear: both;
+    margin: 0em 0 0 0;
+}
+
+span.attr-list {
+    float: left;
+}
+
+span.attr-list,.attr-value{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 0;
+    margin: 0 0 -2px 0;
+}
+
+
+/*span.attr-list{*/
+/*float: left;*/
+/*clear: both;*/
+/*}*/
+
+/*span.attr-list,.attr-value{*/
+/*padding:1px 1px;*/
+/*background:#fff;*/
+/*}*/
+
+/*span.attr-value{*/
+/*float: right;*/
+/*}*/
+
+/*.attr-values{*/
+/*width: 50%;*/
+/*display:  block;*/
+/*text-align: right;*/
+/*}*/
+
+.attr-value {
+    /* October 27, 2014 Cha: */
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    color: #9E9A9F;
+    line-height: 20px;
+}
+
+/*.button {*/
+    /*width: 375px;*/
+    /*height: 60px;*/
+    /*font-family: Lora;*/
+    /*font-size: 20px;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*vertical-align: middle;*/
+    /*display: inline-block;*/
+    /*margin: 4px 2px;*/
+    /*cursor: pointer;*/
+    /*background: #423C44;*/
+    /*box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.05);*/
+    /*border-radius: 2px;*/
+/*}*/
+
+/*.button span{*/
+    /*margin-top: 10px;*/
+/*}*/
+
+.button {
+    width: 350px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background: #423C44;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.05);
+    border-radius: 2px;
+}

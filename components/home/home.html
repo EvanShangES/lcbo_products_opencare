@@ -1,0 +1,102 @@
+<header>
+    <nav class="rectangle navbar-custom">
+        <!--<div>-->
+            <!--<form id="demo-2" style="position: relative; display: flex">-->
+                <!--<input type="search" placeholder="Search">-->
+            <!--</form>-->
+        <!--</div>-->
+        <div class="filter">
+            <input id ="search" type="text" style="padding-top: 10px;">
+            <a ng-click="searchProducts()" style="cursor: pointer"><img src="resources/images/filter.svg"></a>
+        </div>
+        <div class="logo">
+            <a ng-click ="refreshList()" style="cursor: pointer"><img src="resources/images/logo.svg"></a>
+        </div>
+    </nav>
+</header>
+
+<div class="product-container">
+    <div class="rectangle one-product product"></div>
+
+    <div class="rectangle two-product product"></div>
+    <div class="rectangle two-product product"></div>
+
+    <div class="rectangle three-product product"></div>
+    <div class="rectangle three-product product"></div>
+    <div class="rectangle three-product product"></div>
+
+    <div class="rectangle three-product product"></div>
+    <div class="rectangle three-product product"></div>
+    <div class="rectangle three-product product"></div>
+
+    <!--<div class="rectangle mobile-product">-->
+
+    <!--</div>-->
+</div>
+
+<div id="productModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-rectangle">
+        <div class="header">
+            <div class="backarrow">
+                <a ng-click="closeProductPage()"><img src="resources/images/backarrow.svg"></a>
+            </div>
+            <div class="logo">
+                <a><img src="resources/images/logo-lite.svg"></a>
+            </div>
+        </div>
+        <span class="close" style="padding-top: 5px; padding-right: 10px" ng-click="closeProductPage()">&times;</span>
+        <img ng-src="{{currentProduct.image}}">
+        <h1>{{currentProduct.name}}</h1>
+        <img src="resources/images/squiggle.svg" style="width: 14px;height: 4.5px; margin-top: 0">
+        <hr>
+        <div style="margin-bottom: 25px">
+            <div class="basic-info">
+            <div class="drink-info">
+                <span class="varietal">{{currentProduct.varietal}}</span>
+                <span class="package-alcohol">{{currentProduct.package}}  •  {{currentProduct.alcohol_content}}</span>
+            </div>
+            <div class="store-info">
+                <span class="price"> <span class="dollar-sign">$</span> {{currentProduct.price}}</span>
+                <span class="inventory">In Stock</span>
+            </div>
+        </div>
+            <div class="attributes">
+            <ul style="list-style: none; padding: 0; width: inherit; display: inline-block; float: left">
+                <li><span class="attr-list">Release Date</span><span class="dash"></span><span class="attr-value">{{currentProduct.release_date}}</span></li>
+                <li><span class="attr-list">Made in</span><span class="dash"></span><span class="attr-value">{{currentProduct.origin}}</span></li>
+                <li><span class="attr-list">By</span><span class="dash"></span><span class="attr-value">{{currentProduct.producer}}</span></li>
+                <li><span class="attr-list">Sugar Content</span><span class="dash"></span><span class="attr-value">{{currentProduct.sugar_level}}</span></li>
+                <li><span class="attr-list">Sweetness</span><span class="dash"></span><span class="attr-value">{{currentProduct.sugar_content}}</span></li>
+                <li><span class="attr-list">Style</span><span class="dash"></span><span class="attr-value">{{currentProduct.style}}</span></li>
+            </ul>
+        </div>
+        </div>
+
+        <a href="{{currentProduct.lcboUrl}}" target="_blank" class="button"><span>Buy on LCBO.com</span></a>
+        <!--<div class="attribute-values">-->
+            <!--<span>{{}}</span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+        <!--</div>-->
+
+
+
+        <!--<div class="product-div">-->
+            <!--<div class="extra-info">-->
+                <!--<div class="drink-info">-->
+                    <!--<span class="varietal">{{currentProduct.varietal}}</span>-->
+                    <!--<span class="package-alcohol">{{currentProduct.package}}  •  {{currentProduct.alcohol_content}}</span>-->
+                <!--</div>-->
+                <!--<div class="store-info">-->
+                    <!--<span class="price"> <span class="dollar-sign">$</span> {{currentProduct.price}}</span>-->
+                    <!--<span class="inventory">In Stock</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+</div>

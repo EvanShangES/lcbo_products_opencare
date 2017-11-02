@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+    .navbar-custom{
+        height: 80px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-custom{
+        height: 60px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .filter{
+        padding-left: 10px;
+        padding-top:20px;
+        position: absolute
+    }
+
+    .logo{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .product-container {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 5px auto;
+        text-align: center;
+    }
+
+    [class*="-product"]{
+        width: 100%;
+        height: 355px;
+        vertical-align: top;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin-bottom: 20px;    }
+
+    [class*="-product"] > img{
+        position: relative;
+        width: 150px;
+        height: 200px;
+        margin: 25px auto auto auto;
+    }
+
+    [class*="-product"] > div{
+        width: 315px;
+        height: 133px;
+        margin: 0px auto 23px auto;
+    }
+
+    [class*="-product"] > div > h1{
+        text-align: center;
+        width: 315px;
+        height: 50px;
+        font-family: Lora-Bold;
+        font-size: 24px;
+        color: #423C44;
+        margin: 0;
+        vertical-align: middle;
+    }
+
+    [class*="-product"] > div > hr{
+        width: 315px;
+        height: 1px;
+        background: #F3F1F3;
+        margin: 7px 0px 10px 0px;
+        border: none;
+    }
+
+    .three-product .basic-info{
+        width: inherit;
+        display: flex;
+
+    }
+
+    .three-product .drink-info {
+        width: 50%;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .three-product .store-info{
+        width: 50%;
+        text-align: right;
+        margin-top: 0;
+        display: block;
+    }
+
+    .three-product .store-info .price{
+        display: block;
+        text-align: right;
+        height: 20px;
+        font-family: Roboto-Bold;
+        font-size: 16px;
+        color: #423C44;
+        margin: 0;
+        width: auto;
+        position: static;
+    }
+
+    .three-product .store-info .inventory{
+        display: block;
+        height: 20px;
+        font-family: Roboto-Bold;
+        font-size: 11px;
+        color: #6F6A71;
+        margin-top: 4px;
+        margin-bottom: 0;
+        text-align: right;
+        position: static;
+        width: auto;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .header{
+        display: block;
+    }
+
+    .backarrow{
+        padding-left: 20px;
+        padding-top:16px;
+        position: absolute
+    }
+
+    .modal-logo{
+        display: inline;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .modal-rectangle{
+        overflow-y: auto;
+        text-align: center;
+        background: #FFFFFF;
+        border: 1px solid #DDE4EF;
+        box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.05);
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .modal-rectangle > img{
+        width: 150px;
+        height: 200px;
+        margin-top: 20spx;
+    }
+
+    .button{
+        width: 100%;
+    }
+}

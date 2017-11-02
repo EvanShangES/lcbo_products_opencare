@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lcboApp">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCBO Products</title>
+
+    <!---------------------------- SCRIPTS ---------------------------------->
+
+    <!------------------------ ANGULAR SCRIPTS ------------------------------>
+    <script src="resources/js/angular/angular.min.js"></script>
+    <script src="resources/js/angular/angular-route.js"></script>
+    <script src="resources/js/scripts/app.js"></script>
+
+    <!-------------------------- FONT SHEETS -------------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Roboto" rel="stylesheet">
+
+    <!------------------------- CUSTOM SHIT --------------------------------->
+    <link href="resources/css/customStyling.css" rel="stylesheet">
+    <link href="resources/css/mobile.css" rel="stylesheet">
+
+</head>
+<body ng-controller="mainController">
+    <div class="main">
+        <div ng-view class="main"></div>
+    </div>
+</body>
+</html>
